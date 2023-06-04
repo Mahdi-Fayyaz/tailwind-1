@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 1440px) {
+    .btn-tog{
+        visibility: hidden;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+    .btn-tog{
+        visibility: visible;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .btn-tog:focus +ul{
+        visibility: visible;
+    }
+  }
+  .view{
+    background-image: linear-gradient(40deg, #ddd 50%, transparent 50%), linear-gradient(-90deg, #028cd5 50%, #ddd 50%);
+  }
+  .view-1{
+    background-image: linear-gradient(-90deg, #028cd5 50%, transparent 50%), linear-gradient(-90deg, #028cd5 50%, #ddd 50%);
+  }
+  .view-2{
+    background-image: linear-gradient(-60deg, #028cd5 50%, transparent 50%), linear-gradient(-90deg, #028cd5 50%, #ddd 50%);
+  }
+  .view-3{
+    background-image: linear-gradient(50deg, #028cd5 50%, transparent 50%), linear-gradient(-90deg, #028cd5 50%, #ddd 50%);
+  }
